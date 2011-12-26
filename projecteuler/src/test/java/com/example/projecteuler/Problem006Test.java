@@ -18,6 +18,12 @@ public class Problem006Test {
 		_assertEquals(25164150, (new Problem006()).getAnswer());
 	}
 
+	@Test
+	public void testProblem006Alternate() {
+		//
+		_assertEquals(25164150, (new Problem006Alternate()).getAnswer());
+	}
+
 	private void _assertEquals(int expect, int actual) {
 		_assertEquals(null, expect, actual);
 	}
