@@ -15,14 +15,6 @@ package com.example.projecteuler;
  */
 public class Problem001Alternate {
 	private int answer = 0;
-	@Deprecated
-	private static final int TARGET = 999;
-
-	@Deprecated
-	public Problem001Alternate() {
-		answer = sumDivideBy(3, TARGET) + sumDivideBy(5, TARGET)
-				- sumDivideBy(15, TARGET);
-	}
 
 	public Problem001Alternate(int target) {
 		answer = sumDivideBy(3, target) + sumDivideBy(5, target)

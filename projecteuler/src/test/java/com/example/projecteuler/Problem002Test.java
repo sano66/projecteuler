@@ -8,8 +8,6 @@ public class Problem002Test {
 	@Test
 	public void testProblem002() {
 		//
-		assertEquals(4613732, (new Problem002()).getAnswer());
-		//
 		assertEquals(10, (new Problem002(9)).getAnswer());
 		//
 		assertEquals(44, (new Problem002(35)).getAnswer());

@@ -8,8 +8,6 @@ public class Problem006Test {
 	@Test
 	public void testProblem006() {
 		//
-		assertEquals(25164150, (new Problem006()).getAnswer());
-		//
 		assertEquals(2640, (new Problem006(10)).getAnswer());
 		//
 		assertEquals(25164150, (new Problem006(100)).getAnswer());
@@ -17,8 +15,6 @@ public class Problem006Test {
 
 	@Test
 	public void testProblem006Alternate() {
-		//
-		assertEquals(25164150, (new Problem006Alternate()).getAnswer());
 		//
 		assertEquals(2640, (new Problem006Alternate(10)).getAnswer());
 		//

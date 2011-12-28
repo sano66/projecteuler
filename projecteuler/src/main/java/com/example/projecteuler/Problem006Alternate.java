@@ -22,15 +22,6 @@ package com.example.projecteuler;
  */
 public class Problem006Alternate {
 	private int answer = 0;
-	@Deprecated
-	private static final int TARGET = 100;
-
-	@Deprecated
-	public Problem006Alternate() {
-		int sum_square = (2 * TARGET + 1) * (TARGET + 1) * TARGET / 6;
-		int square_sum = (1 + TARGET) * TARGET / 2;
-		answer = (square_sum * square_sum) - sum_square;
-	}
 
 	public Problem006Alternate(int target) {
 		int sum_square = (2 * target + 1) * (target + 1) * target / 6;

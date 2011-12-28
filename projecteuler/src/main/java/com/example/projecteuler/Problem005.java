@@ -16,28 +16,16 @@ package com.example.projecteuler;
  */
 public class Problem005 {
 	private int answer = 1;
-	@Deprecated
-	private static final int TARGET = 20;
 	private static final int[] multipleNumberArray = { 1, 2, 3, 2, 5, 1, 7, 2,
 			3, 1, 11, 1, 13, 1, 1, 2, 17, 1, 19, 1 };
-
-	@Deprecated
-	public Problem005() {
-		// answer = 1 * 2 * 3 * 2 * 5 * 1 * 7 * 2 * 3 * 1; // 2520
-		// answer *= 11 * 1 * 13 * 1 * 1 * 2 * 17 * 1 * 19 * 1; // 232792560
-		for (int i = 0; i < TARGET; i++) {
-			answer *= multipleNumberArray[i];
-		}
-	}
 
 	public Problem005(int target) {
 		// answer = 1 * 2 * 3 * 2 * 5 * 1 * 7 * 2 * 3 * 1; // 2520
 		// answer *= 11 * 1 * 13 * 1 * 1 * 2 * 17 * 1 * 19 * 1; // 232792560
 		if (target > 20)
 			throw new IllegalArgumentException(String.valueOf(target));
-		for (int i = 0; i < target; i++) {
+		for (int i = 0; i < target; i++)
 			answer *= multipleNumberArray[i];
-		}
 	}
 
 	public int getAnswer() {

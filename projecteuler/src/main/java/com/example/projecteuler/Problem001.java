@@ -15,22 +15,11 @@ package com.example.projecteuler;
  */
 public class Problem001 {
 	private int answer = 0;
-	@Deprecated
-	private static final int TARGET = 999;
-
-	@Deprecated
-	public Problem001() {
-		for (int i = 1; i < TARGET + 1; i++) {
-			if (i % 3 == 0 || i % 5 == 0)
-				answer += i;
-		}
-	}
 
 	public Problem001(int target) {
-		for (int i = 1; i < target + 1; i++) {
+		for (int i = 1; i < target + 1; i++)
 			if (i % 3 == 0 || i % 5 == 0)
 				answer += i;
-		}
 	}
 
 	public int getAnswer() {
