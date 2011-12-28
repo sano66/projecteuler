@@ -19,21 +19,22 @@ public class Problem007 {
 	private int[] primeNumberArray = new int[TARGET];
 
 	public Problem007() {
-		for (int i = 0; i < TARGET; i++) {
+		for (int i = 0; i < TARGET; i++)
 			primeNumberArray[i] = getNextPrimeNumber(i);
-		}
 		answer = primeNumberArray[TARGET - 1];
 	}
 
 	private int getNextPrimeNumber(int n) {
 		if (n == 0)
 			return 2;
+		if (n == 1)
+			return 3;
 		int nextPrimeNumber = primeNumberArray[n - 1];
-		nextPrimeNumber++;
+		nextPrimeNumber += 2; // skip even number
 		int j = 0;
 		while (j < n) {
 			while (nextPrimeNumber % primeNumberArray[j] == 0) {
-				++nextPrimeNumber;
+				nextPrimeNumber += 2; // skip even number
 				j = 0;
 			}
 			j++;
