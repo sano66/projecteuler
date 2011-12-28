@@ -17,8 +17,8 @@ public class Problem001Alternate {
 	private int answer = 0;
 
 	public Problem001Alternate(int target) {
-		answer = sumDivideBy(3, target) + sumDivideBy(5, target)
-				- sumDivideBy(15, target);
+		answer = sumDivideBy(3, target - 1) + sumDivideBy(5, target - 1)
+				- sumDivideBy(15, target - 1);
 	}
 
 	private int sumDivideBy(int n, int target) {

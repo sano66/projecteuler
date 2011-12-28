@@ -17,7 +17,7 @@ public class Problem001 {
 	private int answer = 0;
 
 	public Problem001(int target) {
-		for (int i = 1; i < target + 1; i++)
+		for (int i = 1; i < target; i++)
 			if (i % 3 == 0 || i % 5 == 0)
 				answer += i;
 	}
