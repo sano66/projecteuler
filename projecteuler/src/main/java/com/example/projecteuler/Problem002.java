@@ -18,11 +18,21 @@ package com.example.projecteuler;
  */
 public class Problem002 {
 	private int answer = 0;
+	@Deprecated
 	private static final int TARGET = 4000000;
 
+	@Deprecated
 	public Problem002() {
 		int n = 0;
 		for (int i = 1; (n = fibonacci(i)) < TARGET; i++) {
+			if (n % 2 == 0)
+				answer += n;
+		}
+	}
+
+	public Problem002(int target) {
+		int n = 0;
+		for (int i = 1; (n = fibonacci(i)) < target; i++) {
 			if (n % 2 == 0)
 				answer += n;
 		}

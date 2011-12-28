@@ -22,14 +22,25 @@ package com.example.projecteuler;
  */
 public class Problem006 {
 	private int answer = 0;
+	@Deprecated
 	private static final int TARGET = 100;
 
+	@Deprecated
 	public Problem006() {
 		int sum_square = 0;
 		for (int i = 1; i < TARGET + 1; i++) {
 			sum_square += (i * i);
 		}
 		int square_sum = (1 + TARGET) * TARGET / 2;
+		answer = (square_sum * square_sum) - sum_square;
+	}
+
+	public Problem006(int target) {
+		int sum_square = 0;
+		for (int i = 1; i < target + 1; i++) {
+			sum_square += (i * i);
+		}
+		int square_sum = (1 + target) * target / 2;
 		answer = (square_sum * square_sum) - sum_square;
 	}
 

@@ -15,15 +15,22 @@ package com.example.projecteuler;
  */
 public class Problem007 {
 	private int answer = 0;
+	@Deprecated
 	private static final int TARGET = 10001;
 	private int[] primeNumberArray = new int[TARGET];
 
+	@Deprecated
 	public Problem007() {
 		for (int i = 0; i < TARGET; i++)
 			primeNumberArray[i] = getNextPrimeNumber(i);
 		answer = primeNumberArray[TARGET - 1];
 	}
 
+	public Problem007(int target) {
+		for (int i = 0; i < target; i++)
+			primeNumberArray[i] = getNextPrimeNumber(i);
+		answer = primeNumberArray[target - 1];
+	}
 	private int getNextPrimeNumber(int n) {
 		if (n == 0)
 			return 2;
